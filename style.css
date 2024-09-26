@@ -31,3 +31,7 @@ button {
     width: 40%;
     /* height: 70px; */
 }
+
+li {
+    list-style: none;
+}

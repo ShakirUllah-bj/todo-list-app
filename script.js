@@ -10,11 +10,19 @@ function addTodo() {
     if (taskText.trim() !== "") {
 
         let newTask = document.createElement("li");
-        let taskTextNode = document.createTextNode(newTask);
+        let taskTextNode = document.createTextNode(taskText);
         newTask.appendChild(taskTextNode);
 
         let removeBtn = document.createElement("button");
         removeBtn.textContent = "remove";
+
+        removeBtn.addEventListener("click", function() {
+            todoList.removeChild(newTask);
+        });
+
+        newTask.appendChild(removeBtn);
+        todoList.appendChild(newTask);
+        todoInput.value = "";
 
     } else {
         alert("con't add empty task!")
