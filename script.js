@@ -13,7 +13,7 @@ function addTodo() {
         let taskTextNode = document.createTextNode(newTask);
         newTask.appendChild(taskTextNode);
 
-        let removeBtn = createElement("button");
+        let removeBtn = document.createElement("button");
         removeBtn.textContent = "remove";
 
     } else {
