@@ -9,6 +9,10 @@ function addTodo() {
 
     if (taskText.trim() !== "") {
 
+        let newTask = document.createElement("li");
+        let taskTextNode = document.createTextNode(newTask);
+        newTask.appendChild(taskTextNode);
+
     } else {
         alert("con't add empty task!")
     }
