@@ -13,6 +13,9 @@ function addTodo() {
         let taskTextNode = document.createTextNode(newTask);
         newTask.appendChild(taskTextNode);
 
+        let removeBtn = createElement("button");
+        removeBtn.textContent = "remove";
+
     } else {
         alert("con't add empty task!")
     }
