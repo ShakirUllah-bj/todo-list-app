@@ -15,6 +15,8 @@ function addTodo() {
 
         let removeBtn = document.createElement("button");
         removeBtn.textContent = "remove";
+        removeBtn.style.outline = "none";
+        removeBtn.style.border = "none"
 
         removeBtn.addEventListener("click", function() {
             todoList.removeChild(newTask);
