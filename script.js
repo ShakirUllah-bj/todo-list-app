@@ -13,6 +13,15 @@ function addTodo() {
         let taskTextNode = document.createTextNode(taskText);
         newTask.appendChild(taskTextNode);
 
+        newTask.addEventListener("click", function() {
+
+            if (newTask.style.textDecoration == "none") {
+                newTask.style.textDecoration = "red line-through";
+            } else {
+                newTask.style.textDecoration = "none";
+            }
+        });
+
         let removeBtn = document.createElement("button");
         removeBtn.textContent = "remove";
         removeBtn.style.outline = "none";
